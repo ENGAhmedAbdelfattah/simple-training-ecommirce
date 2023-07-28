@@ -1,0 +1,53 @@
+main {
+  margin-top: 50px;
+}
+main div.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 42px;
+}
+
+@media (max-width: 991.98px) {
+  main div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: normal;
+    text-align: center;
+  }
+}
+main div.container div.image-hand {
+  width: 50%;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  main div.container div.image-hand {
+    width: 80%;
+    order: 2;
+  }
+}
+@media (max-width: 767.98px) {
+  main div.container div.image-hand {
+    width: 100%;
+    order: 2;
+  }
+}
+main div.container div.image-hand img {
+  width: 100%;
+  height: 100%;
+}
+main div.container div.content {
+  max-width: 750px;
+  margin: 0 auto;
+}
+main div.container div.content h1 {
+  font-size: 38px;
+}
+main div.container div.content p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #666;
+}

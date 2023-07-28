@@ -1,0 +1,33 @@
+/*=============================================
+=            nav section            =
+=============================================*/
+nav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+}
+nav div.container {
+  display: flex;
+  height: 42px;
+  align-items: center;
+  gap: 30px;
+}
+nav div.container p.logo a {
+  font-size: 18px;
+  line-height: 1;
+}
+nav div.container ul {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+}
+nav div.container ul li a {
+  color: #aaa;
+  line-height: 1;
+}
+nav div.container ul li a.active {
+  color: #111;
+}
+/*=====  End of nav section  ======*/

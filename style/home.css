@@ -1,0 +1,92 @@
+/*=============================================
+=            main section            =
+=============================================*/
+main {
+  padding: 100px 0;
+  background-color: cyan;
+  margin-top: 42px;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .container h1 {
+  color: white;
+  font-size: 42px;
+}
+main .container p {
+  color: #000;
+}
+/*=====  End of main section  ======*/
+
+/*=============================================
+=            Section products            =
+=============================================*/
+section.products {
+  margin: 85px auto;
+}
+section.products div.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+section.products div.container h2 {
+  text-align: center;
+  position: absolute;
+  left: -9999px;
+}
+section.products div.container div.item {
+  border-radius: 12px;
+  overflow: hidden;
+  width: 260px;
+  text-align: center;
+  border: 2px solid #ddd;
+  margin: auto;
+  position: relative;
+}
+
+section.products div.container div.item.sale::after {
+  content: "Sale";
+  font-size: 14px;
+  width: 60px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: black;
+  color: white;
+  padding: 3px;
+  border-radius: 6px;
+}
+section.products div.container div.item div.image-hand {
+  width: 100%;
+  height: 200px;
+}
+section.products div.container div.item div.image-hand img {
+  width: 100%;
+  height: 100%;
+}
+section.products div.container div.item div.content {
+  margin-top: 24px;
+}
+section.products div.container div.item div.content h3 {
+  font-size: 20px;
+}
+section.products div.container div.item div.content p {
+  margin-top: 5px;
+}
+section.products div.container div.item button {
+  margin: 100px auto 30px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #000;
+  padding: 8px 20px;
+}
+section.products div.container div.item button:hover {
+  background-color: cyan;
+  color: white;
+  border: 1px solid #999;
+}
+/*=====  End of Section products  ======*/
